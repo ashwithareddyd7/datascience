@@ -1,0 +1,96 @@
+{
+  "raw_shape": [
+    1208,
+    18
+  ],
+  "missing_before": {
+    "study_hours_week": 36,
+    "sleep_hours": 48,
+    "family_support": 24,
+    "commute_minutes": 36
+  },
+  "duplicates": 8,
+  "bad_attendance": 6,
+  "clean_shape": [
+    1200,
+    18
+  ],
+  "at_risk_pct": 22.9,
+  "at_risk_count": 275,
+  "train_rows": 960,
+  "test_rows": 240,
+  "best_model": "Logistic Regression",
+  "results": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.858,
+      "Precision": 0.624,
+      "Recall": 0.964,
+      "F1": 0.757,
+      "ROC_AUC": 0.96,
+      "CV_F1": 0.764
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.883,
+      "Precision": 0.729,
+      "Recall": 0.782,
+      "F1": 0.754,
+      "ROC_AUC": 0.937,
+      "CV_F1": 0.763
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Accuracy": 0.875,
+      "Precision": 0.736,
+      "Recall": 0.709,
+      "F1": 0.722,
+      "ROC_AUC": 0.951,
+      "CV_F1": 0.73
+    }
+  ],
+  "confusion": [
+    [
+      153,
+      32
+    ],
+    [
+      2,
+      53
+    ]
+  ],
+  "top_features": [
+    [
+      "prev_gpa",
+      0.1308
+    ],
+    [
+      "family_support",
+      0.0372
+    ],
+    [
+      "backlogs",
+      0.0325
+    ],
+    [
+      "attendance_pct",
+      0.0216
+    ],
+    [
+      "study_hours_week",
+      0.0174
+    ],
+    [
+      "part_time_job",
+      0.0156
+    ],
+    [
+      "internal_marks_avg",
+      -0.0002
+    ],
+    [
+      "gender",
+      -0.0029
+    ]
+  ]
+}
